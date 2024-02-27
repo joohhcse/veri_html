@@ -6,23 +6,52 @@ AOS.init({
 });
 
 const carouselEl = document.querySelectorAll('.carousel');
+
+const carouselDiv = document.getElementById('carouselDiv');
+const arrowsBtnPrev = document.getElementById('arrowsBtnPrev');
+const arrowsBtnNext = document.getElementById('arrowsBtnNext');
+
 if (carouselEl.length > 0) {
   const carousel = new Swiper('.carousel', {
     slidesPerView: 'auto',
     grabCursor: true,
     loop: true,
     centeredSlides: true,
-    initialSlide: 1,
+    initialSlide: 0,
     spaceBetween: 24,
     autoplay: {
-      delay: 7000,
+      delay: 40000,  //7000
+      disableOnInteraction: false, // 자동 재생이 사용자 상호 작용으로 중지되지 않도록 설정
     },
     navigation: {
       nextEl: '.carousel-next',
       prevEl: '.carousel-prev',
     },
   });
+
+  carouselDiv.addEventListener('mouseover', () => {
+    carousel.autoplay.stop();
+  });
+  carouselDiv.addEventListener('mouseout', () => {
+    carousel.autoplay.start();
+  });
+
+  arrowsBtnPrev.addEventListener('mouseover', () => {
+    carousel.autoplay.stop();
+  });
+  arrowsBtnPrev.addEventListener('mouseout', () => {
+    carousel.autoplay.start();
+  });
+
+  arrowsBtnNext.addEventListener('mouseover', () => {
+    carousel.autoplay.stop();
+  });
+  arrowsBtnNext.addEventListener('mouseout', () => {
+    carousel.autoplay.start();
+  });
+
 }
+
 
 // Light switcher
 const lightSwitches = document.querySelectorAll('.light-switch');
@@ -45,7 +74,8 @@ if (lightSwitches.length > 0) {
         localStorage.setItem('dark-mode', true);
       } else {
         document.documentElement.classList.remove('dark');
-        localStorage.setItem('dark-mode', false);
+        // localStorage.setItem('dark-mode', false);  //remove
+        localStorage.setItem('dark-mode', true);
       }
     });
   });

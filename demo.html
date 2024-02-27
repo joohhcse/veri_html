@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Request code - Appy Demo</title>
+    <title>VERI</title>
+    <link href="images/veri/logo_br_a.ico" rel="shortcut icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="./css/vendors/aos.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
@@ -22,7 +23,7 @@
     <div class="flex flex-col min-h-screen overflow-hidden">
 
         <!-- Site header -->
-        <header class="fixed w-full z-30 bg-white dark:bg-gray-900 border-solid border-b-2">
+        <header class="md:fixed w-full z-30 bg-white dark:bg-gray-900 border-solid " style="border:1 px solid #2e2e33">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 ">
                 <div class="flex items-center justify-between h-20 ">
 
@@ -35,34 +36,35 @@
                     </div>
 
                     <!-- Desktop navigation -->
-                    <nav class="hidden md:flex md:grow">
+                    <nav class="hidden md:flex md:grow max-w-5xl">
 
                         <!-- Desktop menu links -->
-                        <ul class="flex grow flex-wrap items-center font-medium">
+                        <ul class="flex grow flex-wrap items-center font-medium nav-veri">
                             <li>
-                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="index.html">VERI 소개</a>
+                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out font-veri" href="index.html">VERI 소개</a>
                             </li>
                             <li>
-                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="index.html">레퍼런스</a>
+                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out font-veri" href="index.html">레퍼런스</a>
                             </li>
                             <li>
-                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="index.html">요금</a>
+                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out font-veri" href="index.html">요금</a>
                             </li>
                             <li>
-                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="index.html">고객문의</a>
+                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out font-veri" href="index.html">고객문의</a>
                             </li>
                         </ul>
 
-                        <ul class="flex flex-wrap items-baseline font-medium">
+                        <ul class="flex flex-wrap items-baseline font-medium nav-veri">
                             <li>
-                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="index.html">로그인</a>
+                                <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out font-veri" href="https://dev.veriproof.ai/" target="_blank">로그인</a>
                             </li>
                             <li>
-                                <a id="openModalBtn" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="demo.html">DEMO</a>
+                                <a id="modal-open" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out font-veri" href="demo.html">DEMO</a>
                             </li>
                             <li>
-                                <!-- <a class="text-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="">기타</a> -->
-                                <a class="font-medium w-24 inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-purple-500 hover:bg-purple-400 transition duration-150 ease-in-out" href="index.html">Trial Version</a>
+                                <!-- <a class="font-medium w-24 inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-veri-500 hover:bg-purple-400 transition duration-150 ease-in-out font-veri" href="index.html">Trial Version</a> -->
+                                <!-- <button class="btn-sm text-white bg-veri-500 hover:bg-purple-400">Trial Version</button> -->
+                                <a class="btn-sm text-white bg-veri-500 hover:bg-purple-400 px-4 py-2 my-2" href="https://dev.veriproof.ai/" target="_blank">Trial Version</a>
                             </li></ul>
 
                         <!-- Desktop lights switch -->
@@ -120,19 +122,28 @@
                                 <!-- Links -->
                                 <ul>
                                     <li>
-                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2" href="index.html">VERI 소개</a>
+                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2 font-veri" href="index.html">VERI 소개</a>
                                     </li>
                                     <li>
-                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2" href="index.html">레퍼런스</a>
+                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2 font-veri" href="index.html">레퍼런스</a>
                                     </li>
                                     <li>
-                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2" href="index.html">가격정책</a>
+                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2 font-veri" href="index.html">가격정책</a>
                                     </li>
                                     <li>
-                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2" href="index.html">고객문의</a>
+                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2 font-veri" href="index.html">고객문의</a>
                                     </li>
                                     <li>
-                                        <a class="font-medium w-24 inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-purple-500 hover:bg-purple-400 transition duration-150 ease-in-out" href="">Trial Version</a>
+                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2 font-veri" href="https://dev.veriproof.ai/" target="_blank">로그인</a>
+                                    </li>
+                                    <li>
+                                        <a class="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2 font-veri" href="demo.html">DEMO</a>
+                                    </li>
+                                    <li>
+                                        <!-- <a class="font-medium w-24 inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-veri-500 hover:bg-purple-400 transition duration-150 ease-in-out font-veri" href="">Trial Version</a> -->
+                                        <!-- <button class="btn-sm text-white bg-veri-500 hover:bg-purple-400 px-4 py-2 my-2">Trial Version</button> -->
+                                        <a class="btn-sm text-white bg-veri-500 hover:bg-purple-400 px-4 py-2 my-2" href="https://dev.veriproof.ai/" target="_blank">Trial Version</a>
+                                        
                                     </li>
                                 </ul>
                             </div>
@@ -142,6 +153,7 @@
 
                 </div>
             </div>
+            <div class="veri-division-line"></div>
         </header>
 
         <!-- Page content -->
@@ -164,10 +176,50 @@
                     </defs>
                 </svg>
             </div>
+
+
+            <!-- 팝업 -->
+            <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+            <div id="modal" class="fixed inset-0 z-50 flex justify-center items-center hidden">
+                <!-- 배경 -->
+                <div id="modal-overlay" class="absolute bg-black opacity-80 inset-0"></div>
             
+                <!-- 내용 -->
+                <div style="width: 26rem;" class="items-center p-6 relative mx-auto my-auto rounded-xl shadow-lg bg-white">
+                    <!-- 닫기 버튼 -->
+                    <button id="modal-close" class="absolute top-0 right-0 m-4 text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+            
+                    <!-- body -->
+                    <div class="text-center flex-auto justify-center">
+                        <h1 class="text-3xl text-black font-veri py-2 mb-4">DEMO</h1>
+                    </div>
+                    <div class="w-full flex flex-col justify-center items-center"> <!-- 수정 -->
+                        <div class="w-full max-w-xs"> <!-- 수정 -->
+                            <div class="w-full flex flex-col space-y-4 item-center"> <!-- 수정 -->
+                                <input type="text" class="w-full py-2 text-gray-500 rounded-xl" placeholder="이름" required>
+                                <input type="text" class="w-full py-2 text-gray-500 rounded-xl" placeholder="이메일" required>
+                                <input type="tel" class="w-full py-2 text-gray-500 rounded-xl" placeholder="연락처" required>
+                                <input type="text" class="w-full py-2 text-gray-500 rounded-xl" placeholder="유저" required>
+                                <textarea rows="5" class="w-full px-3 py-2 text-gray-500 rounded-xl"></textarea>
+                                <button class="btn-sm text-white py-6 my-8 text-lg bg-veri-500 hover:bg-purple-400 rounded-xl ">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn text-white bg-purple-500 hover:bg-purple-400"></button>
+
+
             <section class="relative">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
                     <div class="pt-32 pb-12 md:pt-40 md:pb-20">
+
+                        
                         
                         <!-- Page header -->
                         <div class="max-w-6xl mx-auto text-center pb-12 md:pb-16">
@@ -238,11 +290,13 @@
             
             
         </main>
+            
 
         <!-- Site footer -->
         <footer class="relative">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6">
-                <div class="py-12 md:py-16 border-t border-gray-200 dark:border-gray-800 -mt-px">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-veri-footer">
+                <!-- <div class="py-12 md:py-16 border-t border-gray-200 dark:border-gray-800 -mt-px"> -->
+                <div class="py-12 md:py-16 -mt-px">
 
                     <!-- Footer illustration -->
                     <div class="pointer-events-none -z-1" aria-hidden="true">
@@ -259,60 +313,36 @@
 
 
                     <!-- Bottom area -->
-                    <div class="md:flex md:items-center md:justify-between">
-
-                        <!-- Social links -->
-                        <ul class="flex mb-4 md:order-2 md:ml-4 md:mb-0">
-                            <li>
-                                <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Twitter">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="ml-4">
-                                <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Github">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="ml-4">
-                                <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Facebook">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="ml-4">
-                                <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Instagram">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="20.145" cy="11.892" r="1" />
-                                        <path d="M16 20c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" />
-                                        <path d="M20 24h-8c-2.056 0-4-1.944-4-4v-8c0-2.056 1.944-4 4-4h8c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4zm-8-14c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2v-8c0-.935-1.065-2-2-2h-8z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="ml-4">
-                                <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Linkedin">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M23.3 8H8.7c-.4 0-.7.3-.7.7v14.7c0 .3.3.6.7.6h14.7c.4 0 .7-.3.7-.7V8.7c-.1-.4-.4-.7-.8-.7zM12.7 21.6h-2.3V14h2.4v7.6h-.1zM11.6 13c-.8 0-1.4-.7-1.4-1.4 0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4-.1.7-.7 1.4-1.4 1.4zm10 8.6h-2.4v-3.7c0-.9 0-2-1.2-2s-1.4 1-1.4 2v3.8h-2.4V14h2.3v1c.3-.6 1.1-1.2 2.2-1.2 2.4 0 2.8 1.6 2.8 3.6v4.2h.1z" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-
-                        <!-- Middle links -->
-                        <div class="text-sm md:order-1 text-gray-700 mb-2 md:mb-0">
-                            <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">5F Convergence Technology Research Commercialization Center, 218, Gajeong-ro, Yuseong-gu, Daejeon, 34129, Rep. of KOREA</a> <br/> 
-                            <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">TEL : +82-42-867-5800 | FAX : +82-70-7805-8058 | Contact us : htkim@nsetec.com</a> <br/> 
-                            <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">COPYRIGHT © 2017 NSE Technology Inc. ALL RIGHTS RESERVED.  </a> <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Privacy Policy</a>
-                        </div>
-
+                    <div class="md:flex md:items-center ">
                         <!-- Copyrights note -->
                         <!-- <div class="text-gray-600 dark:text-gray-400 text-sm mr-4">&copy; Cruip.com. All rights reserved.</div> -->
-                        <div class="text-gray-600 dark:text-gray-400 text-sm mr-4"><img class="h-8 w-18" src="./images/veri/foot_logo.png" alt="NSE Logo"></div>
+                        <div class="text-gray-600 dark:text-gray-400 text-sm mr-12"><img class="w-41 h-8" src="./images/veri/foot_logo_kr.png" alt="NSE Logo"></div>
                         
+                        <!-- Middle links -->
+                        <!-- <div class="text-sm md:order-1 text-gray-700 mb-2 md:mb-0">
+                            <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out font-veri" href="#0">5F Convergence Technology Research Commercialization Center, 218, Gajeong-ro, Yuseong-gu, Daejeon, 34129, Rep. of KOREA</a>  
+                            <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out font-veri" href="#0">TEL : +82-42-867-5800 | FAX : +82-70-7805-8058 | Contact us : htkim@nsetec.com</a> 
+                            <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out font-veri" href="#0">COPYRIGHT © 2024 NSE Technology Inc. ALL RIGHTS RESERVED.  </a> <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Privacy Policy</a>
+                        </div> -->
+
+                        <div class="">
+                            <ul class="font-veri ">
+                                <li>
+                                    <!-- <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out font-veri text-sm-veri" href="#0">대전광역시 유성구 가정로 218 융합기술연구센터 5F&nbsp;|&nbsp;통신판매업신고 : 제2023-대전유성-0508호</a> -->
+                                    <p class="text-gray-600 dark:text-gray-400 transition duration-150 ease-in-out font-veri text-sm-veri" href="#0">대전광역시 유성구 가정로 218 융합기술연구센터 5F&nbsp;&nbsp;|&nbsp;&nbsp;통신판매업신고 : 제2023-대전유성-0508호</p>
+                                </li>
+                                <li>
+                                    <!-- <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out font-veri text-sm-veri" href="#0">TEL : +82-42-867-5800 &nbsp;|&nbsp; FAX : +82-70-7805-8058 &nbsp;|&nbsp; Contact us : htkim@nsetec.com</a> -->
+                                    <p class="text-gray-600 dark:text-gray-400 transition duration-150 ease-in-out font-veri text-sm-veri mb-2" href="#0">TEL : +82-42-867-5800 &nbsp;&nbsp;|&nbsp;&nbsp; FAX : +82-70-7805-8058 &nbsp;&nbsp;|&nbsp;&nbsp; Contact us : htkim@nsetec.com</p>
+                                </li>
+                                <li class="flex items-center">
+                                    <!-- <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out font-veri text-sm-veri" href="#0">COPYRIGHT © 2024 NSE Technology Inc. ALL RIGHTS RESERVED.  </a>  -->
+                                    <p class="text-gray-600 dark:text-gray-400 transition duration-150 ease-in-out font-veri text-sm-veri" href="#0">COPYRIGHT © 2024 NSE Technology Inc. ALL RIGHTS RESERVED.&nbsp;&nbsp;</p>
+                                    <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out font-veri text-sm-veri" href="privacypolicy.html" target="_blank">Privacy Policy</a>
+                                </li>
+
+                            </ul>
+                        </div>
 
                     </div>
 
@@ -325,6 +355,19 @@
     <script src="./js/vendors/alpinejs.min.js" defer></script>
     <script src="./js/vendors/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.getElementById('modal').classList.remove('hidden');
+        });
+        
+        // 팝업 닫기
+        document.getElementById('modal-close').addEventListener('click', function() {
+            document.getElementById('modal').classList.add('hidden');
+        });
+        document.getElementById('modal-overlay').addEventListener('click', function() {
+            document.getElementById('modal').classList.add('hidden');
+        });
+    </script>
 
 </body>
 
