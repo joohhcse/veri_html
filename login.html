@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <title>VERI</title>
+    <link
+      href="images/veri/logo_br_a.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="./css/vendors/aos.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <script>
+      if (
+        localStorage.getItem("dark-mode") == "true" ||
+        !("dark-mode" in localStorage)
+      ) {
+        document.querySelector("html").classList.add("dark");
+      } else {
+        document.querySelector("html").classList.remove("dark");
+      }
+    </script>
+  </head>
+
+  <body class="font-inter antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 tracking-tight">
+    <!-- Page wrapper -->
+    <div class="flex flex-col min-h-screen overflow-hidden">
+      
+      <!-- Page content -->
+      <main class="grow">
+        <!-- Page illustration -->
+        <div class="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1" aria-hidden="true">
+          <svg class="absolute top-0 right-0 transform translate-x-1/2 -mr-16 dark:opacity-40" width="800" height="502"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="400" cy="102" r="400" fill="url(#heroglow_paint0_radial)" fill-opacity=".6" />
+            <circle cx="209" cy="289" r="170" fill="url(#heroglow_paint1_radial)" fill-opacity=".4" />
+            <defs>
+              <radialGradient id="heroglow_paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="rotate(90 149 251) scale(315.089)">
+                <stop stop-color="#3ABAB4" />
+                <stop offset="1" stop-color="#3ABAB4" stop-opacity=".01" />
+              </radialGradient>
+              <radialGradient id="heroglow_paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="rotate(90 -40 249) scale(133.913)">
+                <stop stop-color="#667EEA" />
+                <stop offset="1" stop-color="#667EEA" stop-opacity=".01" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <section class="relative">
+          <div class="relative max-w-xl mx-auto text-center">
+            <div class="pt-32 pb-12 md:pt-40 md:pb-20">
+              <!-- CTA box -->
+              <!-- <div class="dark relative bg-gray-800 py-10 px-8 md:py-16 md:px-12"> -->
+              <div class="relative">
+
+                <!-- <h1 class="h1 font-veri text-gray-100 mb-8">로그인</h1> -->
+                <div class="flex justify-center items-center mb-8">
+                  <img class="a" src="./images/veri/login_logo_veri.png" width="260" height="67" alt="VERI Logo" />
+                </div>
+        
+                <!-- <div class="flex flex-wrap item-center"> -->
+                <div class="flex justify-center items-center">
+                  <div class="w-full px-3">
+                    <div class="px-3 mb-5">
+                      <label class="block text-gray-800 dark:text-gray-300 text-sm mb-1 font-veri" for=""></label>
+                      <input id="email" type="id" class="w-80 form-input" placeholder="Email Address *" required />
+                    </div>
+        
+                    <div class="px-3 mb-5">
+                      <label class="block text-gray-800 dark:text-gray-300 text-sm mb-1 font-veri" for=""></label>
+                      <input id="password" type="password" class="w-80 form-input" placeholder="Password *" required />
+                    </div>
+        
+                    <div class="flex justify-center mt-8">
+                      <button id="signin-btn" class="btn text-white bg-purple-500 hover:bg-purple-400 mr-3">
+                        <span>Sign In</span>
+                      </button>
+                      <button id="cancel-btn" class="btn text-white bg-purple-500 hover:bg-purple-400 ml-3">
+                        <span>Cancel</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- </form> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Site footer -->
+      <footer class="relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <!-- <div class=" py-12 md:py-16 border-t border-gray-200 dark:border-gray-800 -mt-px"> -->
+            <div class="flex justify-center items-center text-center">
+                <div class="text-gray-600 dark:text-gray-400 text-sm font-veri">&copy; COPYRIGHT(C) 2012-2023 NSE Technology. ALL RIGHT RESERVED.</div>
+            </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/vendors/alpinejs.min.js" defer></script>
+    <script src="./js/vendors/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("modal").classList.remove("hidden");
+      });
+
+      // 팝업 닫기
+      document
+        .getElementById("modal-close")
+        .addEventListener("click", function () {
+          document.getElementById("modal").classList.add("hidden");
+        });
+      document
+        .getElementById("modal-overlay")
+        .addEventListener("click", function () {
+          document.getElementById("modal").classList.add("hidden");
+        });
+    </script>
+  </body>
+</html>
