@@ -1350,13 +1350,14 @@ input[type="range"]::-moz-focus-outer {
   opacity: 0;
 }
 
-.carousel .swiper-slide.swiper-slide-active,
+/* carousel 영역 배경색 일치 위해 제거  */
+/* .carousel .swiper-slide.swiper-slide-active,
 .carousel .swiper-slide.swiper-slide-duplicate-active {
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
+} */
 
 .carousel .swiper-slide.swiper-slide-active img,
 .carousel .swiper-slide.swiper-slide-duplicate-active img {
@@ -1759,6 +1760,10 @@ input[type="range"]::-moz-focus-outer {
   margin-bottom: 2rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -1869,6 +1874,10 @@ input[type="range"]::-moz-focus-outer {
 
 .mt-28 {
   margin-top: 7rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mt-3 {
@@ -2089,6 +2098,10 @@ input[type="range"]::-moz-focus-outer {
 
 .w-80 {
   width: 20rem;
+}
+
+.w-58 {
+  width: 14.4rem;
 }
 
 .w-5 {
@@ -2457,6 +2470,10 @@ input[type="range"]::-moz-focus-outer {
   border-radius: 0.375rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .veri-rounded-t {
   border-radius: 10px 10px 0px 0px;
 }
@@ -2471,9 +2488,9 @@ input[type="range"]::-moz-focus-outer {
 }
 
 .veri-table-division-line {
-  border-top: 1px solid #2e2e33;
-  padding-top: 0.5rem;
-  /* padding-bottom: 0.5rem; */
+  border-top: 1px solid #555555;
+  /* padding-top: 0.5rem; */
+  padding-bottom: 0.5rem;   /* change */
 }
 
 .border-veri1 {
@@ -2616,6 +2633,16 @@ input[type="range"]::-moz-focus-outer {
 .bg-veri-footer {
   --tw-bg-opacity: 1;
   background-color: #191919;
+}
+
+.bg-carousel {
+  --tw-bg-opacity: 1;
+  background-color: #1D1D20;
+}
+
+.bg-login {
+  --tw-bg-opacity: 1;
+  background-color: #1976D2;
 }
 
 .bg-veri-500 {
@@ -2798,6 +2825,10 @@ input[type="range"]::-moz-focus-outer {
   padding: 1.5rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2958,6 +2989,10 @@ input[type="range"]::-moz-focus-outer {
   padding-top: 4rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pt-32 {
   padding-top: 8rem;
 }
@@ -3108,6 +3143,11 @@ input[type="range"]::-moz-focus-outer {
 
 .tracking-tighter {
   letter-spacing: -0.02em;
+}
+
+.text-copyright {
+  --tw-text-opacity: 1;
+  color: rgb(111 111 111 / var(--tw-text-opacity));
 }
 
 .text-black {

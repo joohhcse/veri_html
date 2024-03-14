@@ -164,5 +164,6 @@ if (cancelBtn) {
 }
 
 function cancel() {
-  window.close();
+  // window.close();
+  $('#modal').addClass('hidden');
 }
