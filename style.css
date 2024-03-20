@@ -1837,7 +1837,7 @@ input[type="range"]::-moz-focus-outer {
 }
 
 .mt-1 {
-  margin-top: 0.25rem;
+  margin-top: 0.35rem;
 }
 
 .mt-12 {
@@ -3466,6 +3466,11 @@ input[type="range"]::-moz-focus-outer {
 
 [x-cloak=""] {
   display: none;
+}
+
+.hover\:bg-btn-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: #047fdb;
 }
 
 .hover\:bg-gray-50:hover {
