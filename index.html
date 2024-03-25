@@ -36,7 +36,7 @@
                     <div class="shrink-0 mr-5">
                         <!-- Logo -->
                         <a class="block" href="index.html" aria-label="Cruip">
-                            <img class="h-8 w-18" src="./images/veri/logo_veri.png" alt="VERI Logo">
+                            <img class="h-8 w-18" src="./images/veri/logo_main_a.svg" alt="VERI Logo">
                         </a>
                     </div>
 
@@ -127,7 +127,7 @@
                                     <div class="shrink-0 mr-5 mb-5">
                                         <!-- Logo -->
                                         <a class="block" href="" aria-label="Cruip">
-                                            <img class="h-8 w-18" src="./images/veri/logo_veri.png" alt="VERI Logo">
+                                            <img class="h-8 w-18" src="./images/veri/logo_main_a.svg" alt="VERI Logo">
                                         </a>
                                     </div>
 
@@ -995,9 +995,6 @@
 
             <!-- Pricing Tables -->
             <section id="price" class="relative dark:from-gray-900 border-t border-transparent ">
-                <!-- Background gradient (dark version only) -->
-                <!-- <div class="absolute inset-0 opacity-25 bg-gradient-to-b from-gray-800 to-gray-900 pointer-events-none hidden dark:block" aria-hidden="true"></div> -->
-                <!-- End background gradient (dark version only) -->
                 <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
                     <div class="mt-22 mb-22">
 
@@ -1253,12 +1250,12 @@
                                         </div>
                                     </div>
 
-
+                                
                                 <div class="mt-6 koreanContent">
-                                    <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="#0">구독하기</a>
+                                    <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="javascript:openCheckout()">구독하기</a><!-- Standard -->
                                 </div>
                                 <div class="mt-6 englishContent hidden">
-                                    <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="#0">Subscribe</a>
+                                    <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="javascript:openCheckout()">Subscribe</a>
                                 </div>
                                 <div class="mt-6">
                                     <div class="flex justify-between mb-08">
@@ -1292,6 +1289,7 @@
                                             </span>
                                         </div>
                                     </div>
+                                    
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
                                             <!-- <span class="koreanContent h5 font-veri ">프로젝트 관리</span>
@@ -1329,28 +1327,27 @@
                                                 <span class="englishContent hidden tooltip-text">Users can manage and share reviews and other events.</span>
                                             </span>
                                         </div>
-
                                     </div>
-                                    
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
-                                            <!-- <span class="koreanContent h5 font-veri ">코멘트AI</span>
-                                            <span class="englishContent hidden h5 font-veri ">Comment AI</span> -->
+                                            <!-- <span class="koreanContent h5 font-veri ">멤버 롤 관리</span>
+                                            <span class="englishContent hidden h5 font-veri ">Member Role Setting</span> -->
                                             <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">VERI AI 검토 지원</li>
+                                                <li class="h5 font-veri ">멤버 롤 관리</li>
                                             </ul>
                                             <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">VERI AI Review Assistant</li>
+                                                <li class="h5 font-veri ">Member Role Setting</li>
                                             </ul>
                                         </div>
                                         <div class="flex mb-08">
                                             <span class="h5 font-veri text-veri-color mt-1 tooltip">
                                                 <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">Chat gpt 기반의 AI 검토를 지원합니다.</span>
-                                                <span class="englishContent hidden tooltip-text">Supports Chat gpt-based AI review.</span>
+                                                <span class="koreanContent tooltip-text">프로젝트 관리자는 프로젝트 구성원에게 접근권한을 관리할 수 있습니다.</span>
+                                                <span class="englishContent hidden tooltip-text">Project managers can manage access rights for project members.</span>
                                             </span>
                                         </div>
                                     </div>
+                                    
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
                                             <!-- <span class="koreanContent h5 font-veri ">링크 기반 검토 공유</span>
@@ -1372,23 +1369,43 @@
                                     </div>
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
-                                            <!-- <span class="koreanContent h5 font-veri ">코멘트 가중치</span>
-                                            <span class="englishContent hidden h5 font-veri ">Comment Severity</span> -->
+                                            <!-- <span class="koreanContent h5 font-veri ">코멘트 검색</span>
+                                            <span class="englishContent hidden h5 font-veri ">Comment Search</span> -->
                                             <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">코멘트 가중치</li>
+                                                <li class="h5 font-veri ">코멘트 필터</li>
                                             </ul>
                                             <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Comment Severity</li>
+                                                <li class="h5 font-veri ">Comment Filter</li>
                                             </ul>
                                         </div>
                                         <div class="flex mb-08">
                                             <span class="h5 font-veri text-veri-color mt-1 tooltip">
                                                 <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">검토의견(코멘트)의 중요도를 설정할 수 있습니다.</span>
-                                                <span class="englishContent hidden tooltip-text">Users can set the importance of 'Comment'.</span>
+                                                <span class="koreanContent tooltip-text">검토의견(코멘트) 목록에서 특정 조건에 해당하는 항목을 필터링 할 수 있습니다.</span>
+                                                <span class="englishContent hidden tooltip-text">Users can filter items that meet specific conditions in the 'Comment' list.</span>                                                
                                             </span>
                                         </div>
                                     </div>
+                                    <div class="flex justify-between mb-08">
+                                        <div class="flex mb-08">
+                                            <!-- <span class="koreanContent h5 font-veri ">코멘트 검색</span>
+                                            <span class="englishContent hidden h5 font-veri ">Comment Search</span> -->
+                                            <ul class="list-disc ml-4 koreanContent">
+                                                <li class="h5 font-veri ">코멘트 정렬</li>
+                                            </ul>
+                                            <ul class="list-disc ml-4 englishContent hidden">
+                                                <li class="h5 font-veri ">Comment Sort</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex mb-08">
+                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
+                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
+                                                <span class="koreanContent tooltip-text">검토의견(코멘트) 목록을 특정 기준에 따라 정렬할 수 있습니다.</span>
+                                                <span class="englishContent hidden tooltip-text">Users can sort the 'Comment' list according to specific criteria.</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
                                             <!-- <span class="koreanContent h5 font-veri ">코멘트 검색</span>
@@ -1429,6 +1446,44 @@
                                     </div>
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
+                                            <!-- <span class="koreanContent h5 font-veri ">검토 의견 확인</span>
+                                            <span class="englishContent hidden h5 font-veri ">Confirming Review Opinions</span> -->
+                                            <ul class="list-disc ml-4 koreanContent">
+                                                <li class="h5 font-veri ">필터</li>
+                                            </ul>
+                                            <ul class="list-disc ml-4 englishContent hidden">
+                                                <li class="h5 font-veri ">Filter(Project)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex mb-08">
+                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
+                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
+                                                <span class="koreanContent tooltip-text">프로젝트에서 특정 조건에 해당하는 항목을 필터링 할 수 있습니다.</span>
+                                                <span class="englishContent hidden tooltip-text">Users can filter items in their project that match certain conditions.</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between mb-08">
+                                        <div class="flex mb-08">
+                                            <!-- <span class="koreanContent h5 font-veri ">검토 의견 확인</span>
+                                            <span class="englishContent hidden h5 font-veri ">Confirming Review Opinions</span> -->
+                                            <ul class="list-disc ml-4 koreanContent">
+                                                <li class="h5 font-veri ">검토보고서 생성</li>
+                                            </ul>
+                                            <ul class="list-disc ml-4 englishContent hidden">
+                                                <li class="h5 font-veri ">Review Report Generation</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex mb-08">
+                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
+                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
+                                                <span class="koreanContent tooltip-text">검토의견(코멘트)을 포함한 검토보고서를 생성할 수 있습니다.</span>
+                                                <span class="englishContent hidden tooltip-text">Users can create a review report including 'Comment'.</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between mb-08">
+                                        <div class="flex mb-08">
                                             <!-- <span class="koreanContent h5 font-veri ">Bulk Proof Creation</span>
                                             <span class="englishContent hidden h5 font-veri ">Bulk Proof Creation</span> -->
                                             <ul class="list-disc ml-4 koreanContent">
@@ -1446,25 +1501,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="flex justify-between mb-08">
-                                        <div class="flex mb-08">
-                                            <!-- <span class="koreanContent h5 font-veri ">Zoom to 1600%</span>
-                                            <span class="englishContent hidden h5 font-veri ">Zoom to 1600%</span> -->
-                                            <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">Zoom to 1600%</li>
-                                            </ul>
-                                            <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Zoom to 1600%</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
-                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">최대 1600% 배율까지 확대할 수 있습니다.</span>
-                                                <span class="englishContent hidden tooltip-text">Users can zoom up to 1600% magnification.</span>
-                                            </span>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
                                             <!-- <span class="koreanContent h5 font-veri ">Workflow(Sequential/Parallel)</span>
@@ -1584,10 +1621,10 @@
                                     </div>
 
                                     <div class="mt-6 koreanContent">
-                                        <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="#0">구독하기</a>
+                                        <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="javascript:openCheckout()">구독하기</a><!-- Professional -->
                                     </div>
                                     <div class="mt-6 englishContent hidden">
-                                        <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="#0">Subscribe</a>
+                                        <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="javascript:openCheckout()">Subscribe</a>
                                     </div>
                                 <div class="mt-6">
                                     <div class="flex justify-between mb-08">
@@ -1602,25 +1639,49 @@
                                             <span class="englishContent hidden h5 font-veri text-veri-color">Unlimited</span> -->
                                         </div>
                                     </div>
+
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
-                                            <!-- <span class="koreanContent h5 font-veri ">멤버 롤 관리</span>
-                                            <span class="englishContent hidden h5 font-veri ">Member Role Setting</span> -->
+                                            <!-- <span class="koreanContent h5 font-veri ">Batch Review</span>
+                                            <span class="englishContent hidden h5 font-veri ">Batch Review</span> -->
                                             <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">멤버 롤 관리</li>
+                                                <li class="h5 font-veri ">멀티파일 단일 검토 생성</li>
                                             </ul>
                                             <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Member Role Setting</li>
+                                                <li class="h5 font-veri ">Batch Review</li>
                                             </ul>
                                         </div>
                                         <div class="flex mb-08">
                                             <span class="h5 font-veri text-veri-color mt-1 tooltip">
                                                 <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">프로젝트 관리자는 프로젝트 구성원에게 접근권한을 관리할 수 있습니다.</span>
-                                                <span class="englishContent hidden tooltip-text">Project managers can manage access rights for project members.</span>
+                                                <span class="koreanContent tooltip-text">여러 개의 파일 또는 웹페이지를 하나의 검토로 생성할 수 있습니다.</span>
+                                                <span class="englishContent hidden tooltip-text">Users can upload multiple files or web pages in one review.</span>
                                             </span>
                                         </div>
                                     </div>
+
+                                    <div class="flex justify-between mb-08">
+                                        <div class="flex mb-08">
+                                            <!-- <span class="koreanContent h5 font-veri ">코멘트AI</span>
+                                            <span class="englishContent hidden h5 font-veri ">Comment AI</span> -->
+                                            <ul class="list-disc ml-4 koreanContent">
+                                                <li class="h5 font-veri ">VERI AI 검토 지원</li>
+                                            </ul>
+                                            <ul class="list-disc ml-4 englishContent hidden">
+                                                <li class="h5 font-veri ">VERI AI Review Assistant</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex mb-08">
+                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
+                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
+                                                <span class="koreanContent tooltip-text">Chat gpt 기반의 AI 검토를 지원합니다.</span>
+                                                <span class="englishContent hidden tooltip-text">Supports Chat gpt-based AI review.</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
                                     <div class="flex justify-between mb-08">
                                         <div class="flex mb-08">
                                             <!-- <span class="koreanContent h5 font-veri ">검토정보 공유(텔레그램)</span>
@@ -1656,6 +1717,46 @@
                                                 <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
                                                 <span class="koreanContent tooltip-text">검토의 링크를 카카오톡을 통해 다른 사용자와 공유할 수 있습니다.</span>
                                                 <span class="englishContent hidden tooltip-text">Users can share the link in their review with other users via KakaoTalk.</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex justify-between mb-08">
+                                        <div class="flex mb-08">
+                                            <!-- <span class="koreanContent h5 font-veri ">코멘트 가중치</span>
+                                            <span class="englishContent hidden h5 font-veri ">Comment Severity</span> -->
+                                            <ul class="list-disc ml-4 koreanContent">
+                                                <li class="h5 font-veri ">코멘트 가중치</li>
+                                            </ul>
+                                            <ul class="list-disc ml-4 englishContent hidden">
+                                                <li class="h5 font-veri ">Comment Severity</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex mb-08">
+                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
+                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
+                                                <span class="koreanContent tooltip-text">검토의견(코멘트)의 중요도를 설정할 수 있습니다.</span>
+                                                <span class="englishContent hidden tooltip-text">Users can set the importance of 'Comment'.</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex justify-between mb-08">
+                                        <div class="flex mb-08">
+                                            <!-- <span class="koreanContent h5 font-veri ">Comment(Voice Memo)</span>
+                                            <span class="englishContent hidden h5 font-veri ">Comment(Voice Memo)</span> -->
+                                            <ul class="list-disc ml-4 koreanContent">
+                                                <li class="h5 font-veri ">코멘트(음성메모)</li>
+                                            </ul>
+                                            <ul class="list-disc ml-4 englishContent hidden">
+                                                <li class="h5 font-veri ">Comment(Voice Memo)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex mb-08">
+                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
+                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
+                                                <span class="koreanContent tooltip-text">검토의견(코멘트) 작성 시, 음성으로 내용을 입력할 수 있습니다.</span>
+                                                <span class="englishContent hidden tooltip-text">When leaving a 'Comment', users can enter the content by voice.</span>
                                             </span>
                                         </div>
                                     </div>
@@ -1763,10 +1864,10 @@
 
 
                                 <div class="mt-6 koreanContent">
-                                    <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="#0">구독하기</a>
+                                    <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="javascript:openCheckout()">구독하기</a><!-- Enterprise -->
                                 </div>
                                 <div class="mt-6 englishContent hidden">
-                                    <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="#0">Subscribe</a>
+                                    <a class=" btn-sm text-white bg-veri-500 hover:bg-btn-hover w-full font-veri " href="javascript:openCheckout()">Subscribe</a>
                                 </div>
                                 <div class="mt-6">
                                     <div class="flex justify-between mb-08">
@@ -1781,44 +1882,7 @@
                                             <span class="englishContent hidden h5 font-veri text-veri-color">Unlimited</span> -->
                                         </div>
                                     </div>
-                                    <div class="flex justify-between mb-08">
-                                        <div class="flex mb-08">
-                                            <!-- <span class="koreanContent h5 font-veri ">Batch Review</span>
-                                            <span class="englishContent hidden h5 font-veri ">Batch Review</span> -->
-                                            <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">멀티파일 단일 검토 생성</li>
-                                            </ul>
-                                            <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Batch Review</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
-                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">여러 개의 파일 또는 웹페이지를 하나의 검토로 생성할 수 있습니다.</span>
-                                                <span class="englishContent hidden tooltip-text">Users can upload multiple files or web pages in one review.</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-between mb-08">
-                                        <div class="flex mb-08">
-                                            <!-- <span class="koreanContent h5 font-veri ">Comment(Voice Memo)</span>
-                                            <span class="englishContent hidden h5 font-veri ">Comment(Voice Memo)</span> -->
-                                            <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">코멘트(음성메모)</li>
-                                            </ul>
-                                            <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Comment(Voice Memo)</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
-                                                <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">검토의견(코멘트) 작성 시, 음성으로 내용을 입력할 수 있습니다.</span>
-                                                <span class="englishContent hidden tooltip-text">When leaving a 'Comment', users can enter the content by voice.</span>
-                                            </span>
-                                        </div>
-                                    </div>
+                                    
                                     
                                     
                                 </div>
@@ -1883,24 +1947,24 @@
                                         </div>
                                         <div class="table-cell text-center text-xl-p font-veri font-medium">&nbsp;</div>
                                         <div class="koreanContent table-cell text-center border-l-1 border-r-1">
-                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="#0">구독하기</a>
+                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="javascript:openCheckout()">구독하기</a><!-- Standard -->
                                         </div>
                                         <div class="englishContent hidden table-cell text-center border-l-1 border-r-1">
-                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="#0">Subscribe</a>
+                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="javascript:openCheckout()">Subscribe</a>
                                         </div>
                                         <div class="table-cell text-center text-xl-p font-veri font-medium">&nbsp;</div>
                                         <div class="koreanContent table-cell text-center border-l-1 border-r-1">
-                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="#0">구독하기</a>
+                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="javascript:openCheckout()">구독하기</a><!-- Professional -->
                                         </div>
                                         <div class="englishContent hidden table-cell text-center border-l-1 border-r-1">
-                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="#0">Subscribe</a>
+                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="javascript:openCheckout()">Subscribe</a>
                                         </div>
                                         <div class="table-cell text-center text-xl-p font-veri font-medium">&nbsp;</div>
                                         <div class="koreanContent table-cell text-center border-l-1 border-r-1">
-                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="#0">구독하기</a>
+                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="javascript:openCheckout()">구독하기</a><!-- Enterprise -->
                                         </div>
                                         <div class="englishContent hidden table-cell text-center border-l-1 border-r-1">
-                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="#0">Subscribe</a>
+                                            <a class="btn-sm w-41 text-white bg-veri-500 hover:bg-btn-hover font-veri text-p " href="javascript:openCheckout()">Subscribe</a>
                                         </div>
                                         
                                     </div>
@@ -2416,7 +2480,7 @@
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1 "></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1 "></div>
+                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1 ">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1 ">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
@@ -2797,7 +2861,7 @@
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
+                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
@@ -3035,7 +3099,7 @@
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
+                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
@@ -3067,7 +3131,7 @@
                                             </div>
                                         </div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
+                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
@@ -3101,7 +3165,7 @@
                                             </div>
                                         </div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
+                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
@@ -3237,7 +3301,7 @@
                                             </div>
                                         </div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
+                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
@@ -3305,7 +3369,7 @@
                                             </div>
                                         </div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
+                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
@@ -3395,7 +3459,7 @@
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
+                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                     </div>
@@ -3404,7 +3468,7 @@
                                     <div class="table-row">
                                         <div style="width: 22%;" class="table-cell pl-4 text-center text-xl-p font-veri font-medium">
                                             <div class="flex justify-between mb-08">
-                                                <div class="flex mb-08">
+                                                <div class="flex mb-3">
                                                     <!-- <span class="koreanContent h5 font-veri">코멘트(음성메모)</span>
 					                                <span class="englishContent hidden h5 font-veri">Comment(Voice Memo)</span> -->
                                                     <ul class="list-disc ml-4 koreanContent">
@@ -3414,7 +3478,7 @@
                                                         <li class="h5 font-veri ">Comment(Voice Memo)</li>
                                                     </ul>
                                                 </div>
-                                                <div class="flex mb-08">
+                                                <div class="flex mb-3">
                                                     <span class="h5 font-veri text-veri-color mt-1 tooltip">
                                                         <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
                                                         <span class="koreanContent tooltip-text">검토의견(코멘트) 작성 시, 음성으로 내용을 입력할 수 있습니다.</span>
@@ -3429,46 +3493,12 @@
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
-                                        <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
-                                    </div>
-                                </div>
-                                <div class="table-row-group">
-                                    <div class="table-row">
-                                        <div style="width: 22%;" class="table-cell pl-4 text-center text-xl-p font-veri font-medium">
-                                            <div class="flex justify-between mb-08">
-                                                <div class="flex mb-3">
-                                                    <!-- <span class="koreanContent h5 font-veri">Zoom to 1600%</span>
-					                                <span class="englishContent hidden h5 font-veri">Zoom to 1600%</span> -->
-                                                    <ul class="list-disc ml-4 koreanContent">
-                                                        <li class="h5 font-veri ">Zoom to 1600%</li>
-                                                    </ul>
-                                                    <ul class="list-disc ml-4 englishContent hidden">
-                                                        <li class="h5 font-veri ">Zoom to 1600%</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="flex mb-3">
-                                                    <span class="h5 font-veri text-veri-color mt-1 tooltip">
-                                                        <img class="h-icon w-icon" src="./images/veri/btn_infor.png" alt=""/>
-                                                        <span class="koreanContent tooltip-text">최대 1600% 배율까지 확대할 수 있습니다.</span>
-                                                        <span class="englishContent hidden tooltip-text">Users can zoom up to 1600% magnification.</span>
-                                                    </span>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        
-                                        <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1"></div>
-                                        <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
-                                        <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
-                                        <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                         <div style="width: 1%;" class="table-cell  text-center">&nbsp;</div>
                                         <div style="width: 15%;" class="table-cell text-center text-xl-p font-veri font-medium border-l-1 border-r-1">✔</div>
                                     </div>
                                 </div>
+                                
 
                                 <div class="table-header-group">
                                     <div class="table-row">
@@ -4289,7 +4319,7 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color">✔</span>                                          
+                                            <span class="h5 font-veri text-veri-color"></span>                                          
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
@@ -4307,7 +4337,7 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color">✔</span>                                           
+                                            <span class="h5 font-veri text-veri-color"></span>                                           
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
@@ -4379,7 +4409,7 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color">✔</span>                                          
+                                            <span class="h5 font-veri text-veri-color"></span>                                          
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
@@ -4415,7 +4445,7 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-4">
-                                            <span class="h5 font-veri text-veri-color">✔</span>                                        
+                                            <span class="h5 font-veri text-veri-color"></span>                                        
                                         </div>
                                     </div>
 
@@ -4465,7 +4495,7 @@
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
-                                        <div class="flex mb-08">
+                                        <div class="flex mb-4">
                                             <ul class="list-disc ml-4 koreanContent">
                                                 <li class="h5 font-veri ">코멘트(음성메모) &nbsp;</li>
                                             </ul>
@@ -4478,28 +4508,11 @@
                                                         <span class="englishContent hidden tooltip-text">When leaving a 'Comment', users can enter the content by voice.</span>
                                             </span>
                                         </div>
-                                        <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color"></span>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-between mb-08">
-                                        <div class="flex mb-4">
-                                            <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">Zoom to 1600% &nbsp;</li>
-                                            </ul>
-                                            <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Zoom to 1600% &nbsp;</li>
-                                            </ul>
-                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
-                                                <img id="user" class="h-icon w-icon tooltip" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">최대 1600% 배율까지 확대할 수 있습니다.</span>
-                                                        <span class="englishContent hidden tooltip-text">Users can zoom up to 1600% magnification.</span>
-                                            </span>
-                                        </div>
                                         <div class="flex mb-4">
                                             <span class="h5 font-veri text-veri-color"></span>
                                         </div>
                                     </div>
+                                    
 
                                     <div class="mb-2 veri-table-division-line"></div>
 
@@ -4863,7 +4876,7 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-4">
-                                            <span class="h5 font-veri text-veri-color"></span>
+                                            <span class="h5 font-veri text-veri-color">✔</span>
                                         </div>
                                     </div>
 
@@ -5063,7 +5076,7 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color">✔</span>                                         
+                                            <span class="h5 font-veri text-veri-color"></span>                                         
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
@@ -5189,7 +5202,7 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color">✔</span>                                           
+                                            <span class="h5 font-veri text-veri-color"></span>                                           
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
@@ -5383,7 +5396,7 @@
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
-                                        <div class="flex mb-08">
+                                        <div class="flex mb-4">
                                             <ul class="list-disc ml-4 koreanContent">
                                                 <li class="h5 font-veri ">코멘트(음성메모) &nbsp;</li>
                                             </ul>
@@ -5396,29 +5409,11 @@
                                                         <span class="englishContent hidden tooltip-text">When leaving a 'Comment', users can enter the content by voice.</span>
                                             </span>
                                         </div>
-                                        <div class="flex mb-08">
+                                        <div class="flex mb-4">
                                             <span class="h5 font-veri text-veri-color"></span>
                                         </div>
                                     </div>
-                                    <div class="flex justify-between mb-08">
-                                        <div class="flex mb-4">
-                                            <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">Zoom to 1600% &nbsp;</li>
-                                            </ul>
-                                            <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Zoom to 1600% &nbsp;</li>
-                                            </ul>
-                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
-                                                <img id="user" class="h-icon w-icon tooltip" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">최대 1600% 배율까지 확대할 수 있습니다.</span>
-                                                        <span class="englishContent hidden tooltip-text">Users can zoom up to 1600% magnification.</span>
-                                            </span>
-                                        </div>
-                                        <div class="flex mb-4">
-                                            <span class="h5 font-veri text-veri-color">✔</span>
-                                        </div>
-                                    </div>
-
+                                    
                                     <div class="mb-2 veri-table-division-line"></div>
 
                                     <div class="flex justify-between items-center mb-1">
@@ -6053,7 +6048,7 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color"></span>                                          
+                                            <span class="h5 font-veri text-veri-color">✔</span>                                          
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
@@ -6297,11 +6292,11 @@
                                             </span>
                                         </div>
                                         <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color"></span>
+                                            <span class="h5 font-veri text-veri-color">✔</span>
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
-                                        <div class="flex mb-08">
+                                        <div class="flex mb-4">
                                             <ul class="list-disc ml-4 koreanContent">
                                                 <li class="h5 font-veri ">코멘트(음성메모) &nbsp;</li>
                                             </ul>
@@ -6314,29 +6309,11 @@
                                                         <span class="englishContent hidden tooltip-text">When leaving a 'Comment', users can enter the content by voice.</span>
                                             </span>
                                         </div>
-                                        <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color"></span>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-between mb-08">
-                                        <div class="flex mb-4">
-                                            <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">Zoom to 1600% &nbsp;</li>
-                                            </ul>
-                                            <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Zoom to 1600% &nbsp;</li>
-                                            </ul>
-                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
-                                                <img id="user" class="h-icon w-icon tooltip" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">최대 1600% 배율까지 확대할 수 있습니다.</span>
-                                                        <span class="englishContent hidden tooltip-text">Users can zoom up to 1600% magnification.</span>
-                                            </span>
-                                        </div>
                                         <div class="flex mb-4">
                                             <span class="h5 font-veri text-veri-color">✔</span>
                                         </div>
                                     </div>
-
+                                    
                                     <div class="mb-2 veri-table-division-line"></div>
 
                                     <div class="flex justify-between items-center mb-1">
@@ -7220,7 +7197,7 @@
                                         </div>
                                     </div>
                                     <div class="flex justify-between mb-08">
-                                        <div class="flex mb-08">
+                                        <div class="flex mb-4">
                                             <ul class="list-disc ml-4 koreanContent">
                                                 <li class="h5 font-veri ">코멘트(음성메모) &nbsp;</li>
                                             </ul>
@@ -7233,29 +7210,11 @@
                                                         <span class="englishContent hidden tooltip-text">When leaving a 'Comment', users can enter the content by voice.</span>
                                             </span>
                                         </div>
-                                        <div class="flex mb-08">
-                                            <span class="h5 font-veri text-veri-color">✔</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-between mb-08">
-                                        <div class="flex mb-4">
-                                            <ul class="list-disc ml-4 koreanContent">
-                                                <li class="h5 font-veri ">Zoom to 1600% &nbsp;</li>
-                                            </ul>
-                                            <ul class="list-disc ml-4 englishContent hidden">
-                                                <li class="h5 font-veri ">Zoom to 1600% &nbsp;</li>
-                                            </ul>
-                                            <span class="h5 font-veri text-veri-color mt-1 tooltip">
-                                                <img id="user" class="h-icon w-icon tooltip" src="./images/veri/btn_infor.png" alt=""/>
-                                                <span class="koreanContent tooltip-text">최대 1600% 배율까지 확대할 수 있습니다.</span>
-                                                        <span class="englishContent hidden tooltip-text">Users can zoom up to 1600% magnification.</span>
-                                            </span>
-                                        </div>
                                         <div class="flex mb-4">
                                             <span class="h5 font-veri text-veri-color">✔</span>
                                         </div>
                                     </div>
-
+                                    
                                     <div class="mb-2 veri-table-division-line"></div>
 
                                     <div class="flex justify-between items-center mb-1">
@@ -7480,10 +7439,11 @@
                     <!-- Bottom area -->
                     <div class="md:flex md:justify-between ">
                     <!-- <div class="md:flex md:items-center "> -->
-                        <!-- Copyrights note -->
-                        <!-- <div class="text-gray-600 dark:text-gray-400 text-sm mr-12 mb-4"><img class="w-41 h-8" src="./images/veri/foot_logo_kr.png" alt="NSE Logo"></div> -->
-                        <div class="koreanContent text-gray-600 dark:text-gray-400 text-sm ml-6 mr-6 mt-4 mb-4"><img class="w-41 h-8" src="./images/veri/foot_logo_kr.png" alt="NSE Logo"></div>
-                        <div class="englishContent hidden text-gray-600 dark:text-gray-400 text-sm ml-6 mr-6 mt-6 mb-4"><img class="w-58 h-10" src="./images/veri/foot_logo.png" alt="NSE Logo"></div>
+                        <!-- Copyrights note -->                        
+                        <!-- <div class="koreanContent text-gray-600 dark:text-gray-400 text-sm ml-6 mr-6 mt-4 mb-4"><img class="w-41 h-8" src="./images/veri/foot_logo_kr.png" alt="NSE Logo"></div>
+                        <div class="englishContent hidden text-gray-600 dark:text-gray-400 text-sm ml-6 mr-6 mt-6 mb-4"><img class="w-58 h-10" src="./images/veri/foot_logo.png" alt="NSE Logo"></div> -->
+                        <div class="koreanContent text-gray-600 dark:text-gray-400 text-sm ml-6 mr-6 mt-4 mb-4"><img class="w-41 h-8" src="./images/veri/logo_nse_kor.svg" alt="NSE Logo"></div>
+                        <div class="englishContent hidden text-gray-600 dark:text-gray-400 text-sm ml-6 mr-6 mt-6 mb-4"><img class="w-58 h-10" src="./images/veri/logo_nse_eng.svg" alt="NSE Logo"></div>
 
                         <!-- Middle links -->
                         <!-- <div class="text-sm md:order-1 text-gray-700 mb-2 md:mb-0">
@@ -7517,7 +7477,7 @@
                             <!-- <ul class="flex mb-4 md:order-2 lg:ml-16"> -->
                             <ul class="flex mb-4 md:order-2 justify-start mt-4 ml-6 mr-6">
                                 <li>
-                                    <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="javascript:addChannel()" aria-label="">
+                                    <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="javascript:addChannel()" aria-label="" alt="카카오톡 채널 추가하기 버튼">
                                         <img class="w-footer-icon h-footer-icon" src="./images/veri/logo_kakao.png" alt="veri blog Logo" />
                                     </a>
                                 </li>
@@ -7656,6 +7616,21 @@
         #btn_toggle_lang:hover, #btn_toggle_lang2:hover {
           cursor: pointer;
         }
+        
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            -webkit-text-fill-color: white;
+            -webkit-box-shadow: 0 0 0px 1000px #1b2937 inset;
+            box-shadow: 0 0 0px 1000px #1b2937 inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        input:-webkit-autofill:first-line {
+            font-size: 0.875rem;
+        }
+
 
     </style>
 
@@ -7664,10 +7639,13 @@
     <script src="./js/vendors/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 
-    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.min.js" integrity="sha384-l+xbElFSnPZ2rOaPrU//2FF5B4LB8FiX5q4fXYTlfcG4PGpMkE1vcL7kNXI6Cci0" crossorigin="anonymous"></script>
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.min.js"
+        integrity="sha384-l+xbElFSnPZ2rOaPrU//2FF5B4LB8FiX5q4fXYTlfcG4PGpMkE1vcL7kNXI6Cci0" crossorigin="anonymous"></script>
     <script>
-        Kakao.init('9b0b6664c56bd11028ddf03ad3641558'); // 사용하려는 앱의 JavaScript 키 입력   //REST API키
-        
+        Kakao.init('4d1a42877f2dc675c63ea16bff300376'); // 사용하려는 앱의 JavaScript 키 입력
+    </script>
+
+    <script>
         // 카카오톡 채널 추가하기
         function addChannel() {
             Kakao.Channel.addChannel({
@@ -7677,7 +7655,6 @@
     </script>
 
     <script>
-        // document.addEventListener("DOMContentLoaded", function(){
         $(function() {   //ready
             $("#hiddenVideo").toggleClass("hidden");
 
@@ -7941,7 +7918,6 @@
         // 더보기 / 접기 //
         // $("#showVideoButton").on("click", function(event) {
         //     $("#hiddenVideo").toggleClass("hidden");
-
         //     // if(document.getElementById('spanShowVideoButton').innerHTML === '더보기 +') {
         //     //     document.getElementById('spanShowVideoButton').innerHTML = '접기 ↑'
         //     //     window.scrollBy({top: video2.getBoundingClientRect().top, behavior: 'smooth'});
@@ -7957,14 +7933,11 @@
         //     } else {
         //         $('#spanShowVideoButton').html('더보기 +');
         //     }
-
         // });
         // hideVideoButton.addEventListener('click', function() {
         //     $("#hiddenVideo").toggleClass("hidden");
-
         //     // window.scrollBy({top: video2.getBoundingClientRect().top, behavior: 'smooth'});
         //     window.scrollBy({top: video2.getBoundingClientRect().top});
-
         //     // if(document.getElementById('spanShowVideoButton').innerHTML === '더보기 +') {
         //     //     document.getElementById('spanShowVideoButton').innerHTML = '접기 ↑'
         //     // }
@@ -8005,7 +7978,9 @@
             }, 'fast');
         }
 
-        
+        function openCheckout() {
+            var popup = window.open('checkout.html', '결제창 팝업', 'width=700px,height=700px,scrollbars=yes');
+        }
 
     </script>
 
